@@ -7,7 +7,7 @@ html {
 
 body {
   color: #444;
-  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+  font-family: 'Museo Sans', Helvetica, 'Sans Serif';
   font-size: 12px;
   line-height: 1.7;
   padding: 1em;
@@ -58,6 +58,7 @@ a::selection {
 }
 
 p {
+	font-style: 100;
   margin: 1em 0;
 }
 
@@ -73,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h4, h5, h6 {
-  font-weight: bold;
+  font-style: 300;
 }
 
 h1 {
@@ -82,6 +83,7 @@ h1 {
 
 h2 {
   font-size: 2em;
+  border-bottom: 2px solid #eee;
 }
 
 h3 {
@@ -119,9 +121,11 @@ hr {
 
 pre, code, kbd, samp {
   color: #000;
-  font-family: monospace, monospace;
-  _font-family: 'courier new', monospace;
+  font-family: 'Camingo Code', monospace;
   font-size: 0.98em;
+  background-color: F8F8FF;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 pre {
@@ -241,6 +245,12 @@ table td {
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
   vertical-align: top;
+}
+tr:nth-child(even) {
+   background-color: #F5F5F5;
+}
+tr:nth-child(odd) {
+   background-color: #ffffff;
 }
 
 .author {
