@@ -137,7 +137,7 @@ pre {
 
 
 b, strong {
-  font-weight: bold;
+  font-style: 300;
 }
 
 dfn {
@@ -154,7 +154,7 @@ mark {
   background: #ff0;
   color: #000;
   font-style: italic;
-  font-weight: bold;
+  font-style: 300;
 }
 
 sub, sup {
@@ -190,7 +190,7 @@ dl {
 }
 
 dt {
-  font-weight: bold;
+  font-style: 300;
   margin-bottom: .8em;
 }
 
@@ -235,7 +235,7 @@ table {
 
 table th {
   padding: .2em 1em;
-  background-color: #eee;
+/*  background-color: #eee; */
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
 }
@@ -247,10 +247,11 @@ table td {
   vertical-align: top;
 }
 tr:nth-child(even) {
-   background-color: #F5F5F5;
+   background-color: rgba(255, 255, 255, 0.2);
 }
 tr:nth-child(odd) {
-   background-color: #ffffff;
+ /*  background-color: #ffffff; */
+ background-color: rgba(0, 0, 0, 0.2);
 }
 
 .author {
@@ -332,5 +333,17 @@ tr:nth-child(odd) {
 
   h2, h3 {
     page-break-after: avoid;
+  }
+}
+/* nachfolgendes habe ich von https://julia-vicentini.de/blog/css-dark-mode/*/
+@media (prefers-color-scheme: dark) {
+ html, body {background: #000}
+ h1, h2, h3, h4, p {color: #fff}
+ img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+  }
+ img:hover {
+    opacity: 1;
   }
 }
