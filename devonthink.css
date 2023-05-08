@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #111;
   line-height: 125%;
   margin-top: 2em;
+  font-style: 300;
   font-weight: normal;
 }
 
